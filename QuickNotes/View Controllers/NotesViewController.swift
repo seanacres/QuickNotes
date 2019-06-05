@@ -74,3 +74,20 @@ extension NotesViewController: NoteTableViewCellDelegate {
         self.present(activityController, animated: true, completion: nil)
     }
 }
+
+
+/*
+ 
+ Delgator View
+ 1. Create protocol
+ 2. Add properties and methods to protocol
+ 3. In delegator class, create (weak var delegate) property of type (Protocol)
+ 4. In IBAction call self.delegate.[insert method name here]
+ 
+ Delegate View
+ 1. Adopt the protocol
+ 2. Assign the delegate when initializing the delgator view
+ 3. "Add protocol stubs"
+ 4. Add code in delegate method that you want the delegate to complete
+ 
+ */
