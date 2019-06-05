@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		6625D5A022A81F6F0089782A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6625D59F22A81F6F0089782A /* AppDelegate.swift */; };
-		6625D5A222A81F6F0089782A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6625D5A122A81F6F0089782A /* ViewController.swift */; };
 		6625D5A522A81F6F0089782A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6625D5A322A81F6F0089782A /* Main.storyboard */; };
 		6625D5A722A81F700089782A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6625D5A622A81F700089782A /* Assets.xcassets */; };
 		6625D5AA22A81F700089782A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6625D5A822A81F700089782A /* LaunchScreen.storyboard */; };
+		6625D5B422A828600089782A /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6625D5B322A828600089782A /* NotesViewController.swift */; };
+		6625D5B622A82BE10089782A /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6625D5B522A82BE10089782A /* Note.swift */; };
+		6625D5BB22A82DF40089782A /* NoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6625D5BA22A82DF40089782A /* NoteController.swift */; };
+		6625D5BE22A831170089782A /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6625D5BD22A831170089782A /* NoteTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6625D59C22A81F6F0089782A /* QuickNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6625D59F22A81F6F0089782A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6625D5A122A81F6F0089782A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6625D5A422A81F6F0089782A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6625D5A622A81F700089782A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6625D5A922A81F700089782A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6625D5AB22A81F700089782A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6625D5B322A828600089782A /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		6625D5B522A82BE10089782A /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		6625D5BA22A82DF40089782A /* NoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteController.swift; sourceTree = "<group>"; };
+		6625D5BD22A831170089782A /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,57 @@
 		6625D59E22A81F6F0089782A /* QuickNotes */ = {
 			isa = PBXGroup;
 			children = (
-				6625D59F22A81F6F0089782A /* AppDelegate.swift */,
-				6625D5A122A81F6F0089782A /* ViewController.swift */,
-				6625D5A322A81F6F0089782A /* Main.storyboard */,
-				6625D5A622A81F700089782A /* Assets.xcassets */,
-				6625D5A822A81F700089782A /* LaunchScreen.storyboard */,
+				6625D5B722A82C270089782A /* Model */,
+				6625D5BC22A82E010089782A /* Controller */,
+				6625D5B822A82C310089782A /* View Controllers */,
+				6625D5BF22A8311E0089782A /* Views */,
+				6625D5B922A82C440089782A /* Resources */,
 				6625D5AB22A81F700089782A /* Info.plist */,
 			);
 			path = QuickNotes;
+			sourceTree = "<group>";
+		};
+		6625D5B722A82C270089782A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6625D5B522A82BE10089782A /* Note.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6625D5B822A82C310089782A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6625D5B322A828600089782A /* NotesViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		6625D5B922A82C440089782A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6625D59F22A81F6F0089782A /* AppDelegate.swift */,
+				6625D5A322A81F6F0089782A /* Main.storyboard */,
+				6625D5A622A81F700089782A /* Assets.xcassets */,
+				6625D5A822A81F700089782A /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6625D5BC22A82E010089782A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6625D5BA22A82DF40089782A /* NoteController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6625D5BF22A8311E0089782A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6625D5BD22A831170089782A /* NoteTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6625D5A222A81F6F0089782A /* ViewController.swift in Sources */,
+				6625D5B422A828600089782A /* NotesViewController.swift in Sources */,
+				6625D5BB22A82DF40089782A /* NoteController.swift in Sources */,
 				6625D5A022A81F6F0089782A /* AppDelegate.swift in Sources */,
+				6625D5BE22A831170089782A /* NoteTableViewCell.swift in Sources */,
+				6625D5B622A82BE10089782A /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64HJH4K2FC;
 				INFOPLIST_FILE = QuickNotes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +353,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64HJH4K2FC;
 				INFOPLIST_FILE = QuickNotes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
